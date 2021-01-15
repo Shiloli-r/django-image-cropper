@@ -17,7 +17,7 @@ class PhotoForm(forms.ModelForm):
     def save(self):
         photo = super(PhotoForm, self).save()
 
-        x = self.self.cleaned_data.get('x')
+        x = self.cleaned_data.get('x')
         y = self.cleaned_data.get('y')
         w = self.cleaned_data.get('width')
         h = self.cleaned_data.get('height')
