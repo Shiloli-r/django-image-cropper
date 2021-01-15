@@ -14,4 +14,8 @@ def home(request):
 
     else:
         form = PhotoForm()
-    return render(request, 'base.html')
+    context = {
+        'form': form,
+        'photo': photos
+    }
+    return render(request, 'index.html', context)
